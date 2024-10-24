@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="Netflix.css" />
+    <style type="text/css">
+      .img-box img {
+        max-width: 100%;
+      }
+      .img-box {
+        display: flex;
+        justify-content: space-around;
+      }
+      .slider-container .container {
+        padding: 0 15px;
+        max-width: 1130px;
+        margin: 0 auto;
+      }
+      .card-siilder {
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img
+          src="https://img.icons8.com/color/48/netflix.png"
+          alt="netflix"
+          class="logo"
+        />
+        <div>
+          <button class="lang-btn">
+            English
+            <i
+              class="fa fa-angle-down"
+              style="font-size: 24px; position: relative; left: 70px"
+            ></i>
+          </button>
+          <button class="sign-btn">Sign in</button>
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form class="email">
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <!-- <hr> -->
+    <br /><br /><br /><br />
+
+    <!-- Carousel -->
+    <!-- <div class="carousel"> -->
+    <h1 style="position: relative; left: 100px">Trending Now</h1>
+    <br /><br /><br />
+    <div class="slider-container">
+      <div class="contanier">
+        <div class="swiper card-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG1.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG2.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG3.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG4.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG5.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG6.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG7.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG8.webp" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <img src="./IMG9.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+    <!-- swiper-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      var swiper = new Swiper(".card-slider", {
+        slidesPerView: 4,
+        spaceBetween: 2,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br />
+
+    <!-- cards -->
+    <h2
+      style="
+        font-size: 24px;
+        font-weight: 500px;
+        position: relative;
+        left: 130px;
+      "
+    >
+      More Reasons to Join
+    </h2>
+    <br /><br />
+    <section class="card">
+      <div class="card-container">
+        <!-- <br><br> -->
+        <h3>Enjoy on your TV</h3>
+        <p>
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.
+        </p>
+        <img
+          width="58"
+          height="58"
+          src="https://img.icons8.com/nolan/64/tv.png"
+          alt="tv"
+          style="position: relative; top: 160px; left: 160px"
+        />
+      </div>
+      <div class="card-container">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favorites easily and always have something to watch.</p>
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-download-web-flaticons-lineal-color-flat-icons-4.png"
+          alt="external-download-web-"
+          style="position: relative; top: 130px; left: 160px"
+        />
+      </div>
+      <div class="card-container">
+        <h3>Watch everywhere</h3>
+        <p>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/pulsar-gradient/48/watch-tv.png"
+          alt="watch-tv"
+          style="position: relative; top: 180px; left: 166px"
+        />
+      </div>
+      <div class="card-container">
+        <h3>Create profiles for kids</h3>
+        <p>
+          Send kids on adventures with their favorite characters in a space made
+          just for them — free with your membership.
+        </p>
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ultraviolet/50/anime-emoji.png"
+          alt="anime-emoji"
+          style="position: relative; top: 137px; left: 160px"
+        />
+      </div>
+    </section>
+
+    <br /><br /><br /><br /><br />
+
+    <!-- FAQ -->
+    <div class="faq">
+      <h2 style="position: relative; left: 220px; top: 30px">
+        Frequently Asked Questions
+      </h2>
+      <ul class="according">
+        <li>
+          <input type="radio" name="according" id="first" />
+          <label for="first">What is Netflix?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="according" id="second" />
+          <label for="second">How much does Netflix cost?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="according" id="third" />
+          <label for="third">Where can I watch?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="according" id="fourth" />
+          <label for="fourth">How do I cancel?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="according" id="fifth" />
+          <label for="fifth">What can I watch on Netflix?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" name="according" id="sixth" />
+          <label for="sixth">Is Netflix good for kids?</label>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              excepturi soluta temporibus tenetur, vero iure voluptate rem vel
+              veritatis voluptas.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <button
+        type="submit"
+        style="
+          position: relative;
+          width: 350px;
+          height: 70px;
+          font-size: 25px;
+          color: #fff;
+          background: red;
+          left: 240px;
+          bottom: 50px;
+        "
+      >
+        Restart Your Membership
+      </button>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- footer -->
+
+    <div class="footer">
+      <h2>Questions? call 000-000-000</h2>
+
+      <div class="row">
+        <div class="col">
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs </a>
+          <a href="#">Cookies Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Account </a>
+          <a href="#">Ways to watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Neftlix</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Media Center </a>
+          <a href="#"> Terms of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <button class="lang-btn">
+        English
+        <i
+          class="fa fa-angle-down"
+          style="font-size: 24px; position: relative; left: 70px"
+        ></i>
+      </button>
+      <p class="copyright">Netflix Pakistan</p>
+    </div>
+  </body>
+</html>
